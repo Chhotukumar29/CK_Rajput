@@ -16,7 +16,7 @@ Make sure Ruby is installed on your computer, for detailed information on how ch
 3) clone the repo by running in your bash terminal/cmd, make sure to change url below to url of your own fork.
 
 ```
-git clone https://github.com/manu-sk/ck-rajput.github.io.git
+git clone https://github.com/ck-rajput/ck-rajput.github.io.git
 ```
 
 4) go into the folder with 
