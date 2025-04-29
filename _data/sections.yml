@@ -1,0 +1,24 @@
+projects:
+  url: /projects
+  heading: Projects
+  words: These are my non work related projects. For work related experience please refer to resume section.
+  class: m7 projects
+  border: projects
+about:
+  url: /about
+  heading: About Me
+  words:  Hello, I am Chhotu Kumar Rajput, a Data Scientist/AI-ML Engineer with 3 years of experience in Python, R, Machine Learning, Deep Learning, NLP, Computer Vision, GenAI, AutoGen, and AWS. I have successfully delivered AI solutions in enterprises and startups. Currently working on AI Facial Recognition and Object Detection projects. I'm passionate about leveraging AI to drive business value and excited for opportunities to contribute my skills in dynamic, innovative teams.
+  class: m5 about
+  border: about
+resume:
+  url: /resume
+  heading: Resume
+  words: Check out or download my resume in this section
+  class: m6 algorithms
+  border: algorithms
+contact:
+  url: /contact
+  heading: Contact
+  words: Feel free to shoot me an email
+  class: m6 contact
+  border: contact

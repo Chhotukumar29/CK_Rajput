@@ -1,0 +1,61 @@
+- name: Technical Skills
+  skills:
+     - skill_name: Machine Learning
+     - skill_name: Deep Learning
+     - skill_name: Numpy
+     - skill_name: Pandas
+     - skill_name: Scikit-Learn
+     - skill_name: Natural Language Processing
+     - skill_name: Computer Vision
+     - skill_name: Generative AI
+     - skill_name: LLMs (OpenAI, Gemini, LLAMA, Mistral)
+     - skill_name: AutoGen
+     - skill_name: Big Data (Hive, PySpark)
+     - skill_name: Docker
+     - skill_name: FastAPI
+     - skill_name: Vector Database
+     - skill_name: Streamlit
+     - skill_name: GitHub/Git
+     - skill_name: Power BI
+     - skill_name: Tableau
+     - skill_name: Seaborn
+     - skill_name: SQL/NoSQL
+
+
+
+
+     
+- name: Development Tools and Frameworks
+  skills:    
+    - skill_name: PyCharm
+    - skill_name: Visual Studio Code
+    - skill_name: Jupyter
+    - skill_name: TensorFlow
+    - skill_name: Pytorch
+    
+- name: Operating Systems
+  skills:
+    - skill_name: Windows
+    - skill_name: Ubuntu
+       
+- name: Languages
+  skills:
+    - skill_name: Python
+    - skill_name: R
+      
+- name: DevOps Tools
+  skills:
+    - skill_name: Git
+    - skill_name: GitHub
+
+
+- name: Web
+  skills:
+    - skill_name: Flask
+    - skill_name: FastAPI
+  
+      
+- name: Web Scrapping
+  skills:
+    - skill_name: Selenium
+    - skill_name: BeautifulSoap
