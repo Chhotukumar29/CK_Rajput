@@ -1,61 +1,116 @@
----
-layout: not_homepage
----
-
-{% include quote.html quote=page.quote author=page.author %}
-
-<div class="container">
-  <form class="email_me" action="https://formspree.io/f/xjvjoydb" method="POST">
-    <input type="text" name="_gotcha" style="display:none" />
-    <div class="row">
-      <div class="input-field col m6 s12">
-        <i class="material-icons prefix">account_circle</i>
-        <input id="icon_prefix" type="text" name="name" class="validate email_input">
-        <label for="icon_prefix">Full Name</label>
-      </div>
-      <div class="input-field col m6 s12">
-        <i class="material-icons prefix">phone</i>
-        <input id="icon_telephone" name="phone" type="tel" class="validate email_input">
-        <label for="icon_telephone" data-error="Make sure your number matches this format XXX-XXX-XXXX">Telephone</label>
-      </div>
-      <div class="input-field col m6 s12">
-        <i class="material-icons prefix">email</i>
-        <input id="icon_prefix" name="_replyto" type="email" class="validate email_input" required>
-        <label for="icon_prefix" data-error="Make sure you've entered a valid email" required>Email</label>
-      </div>
-      <div class="input-field col m6 s12">
-        <i class="material-icons prefix">S</i>
-        <input id="icon_prefix" type="text" name="_subject" class="email_input"/>
-        <label for="icon_prefix">Subject</label>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="input-field col s12">
-        <i class="material-icons prefix">mode_edit</i>
-        <textarea id="textarea1" aria-required="true" name="message" class="materialize-textarea email_input validate"></textarea>
-
-        <label for="textarea1" data-error="Make sure you've entered a message">Message</label>
-      </div>
-    </div>
-
-    <div class="row">
-      <button class="fill col s8 offset-s2 m4 offset-m4" type="submit" name="action">Submit
-      </button>
-    </div>
-  </form>
-  <br/>
-  <div id="email_modal" class="modal">
-    <div class="container">
-      <div class="modal-content row">
-        <h4 class="center-align">Your email is on the way!</h4>
-        <p class="center-align description">I usually reply fast</p>
-      </div>
-      <div class="row">
-        <div class="buttons col s8 offset-s2 m8 offset-m2 l8 offset-l2">
-          <a class="button_wrapper modal-action modal-close" ><button class="fill col s12">back to site</button></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CK RAJPUT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600&family=Raleway:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrapper">
+            <a href="index.html" class="back-button">
+                ← Back to Portfolio
+            </a>
+            
+            <div class="content-paper">
+                <div class="page-header">
+                    <h1 class="page-title">Get In Touch</h1>
+                    <p style="max-width: 600px; margin: 0 auto; color: #666; font-size: 18px; line-height: 1.6;">
+                        I'm always interested in AI/ML opportunities, innovative projects, and collaborative ventures. 
+                        Feel free to reach out to discuss technology, share ideas, or explore potential partnerships!
+                    </p>
+                </div>
+                
+                <!-- Contact Info Cards -->
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:Chhotuchiitodiya@gmail.com">Chhotuchiitodiya@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <a href="tel:+918890502275">+91-8890502275</a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <span>Noida, UP, India</span>
+                    </div>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 class="section-title-page">Send a Message</h2>
+                        
+                        <form id="contactForm">
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 24px;">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" name="name" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="form-button">
+                                Send Message 📤
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div>
+                        <h2 class="section-title-page">Connect With Me</h2>
+                        
+                        <p style="margin-bottom: 32px; line-height: 1.8;">
+                            Follow me on social media to stay updated with my latest AI/ML projects, insights on data science, 
+                            and professional achievements in the tech industry.
+                        </p>
+                        
+                        <div class="social-buttons">
+                            <a href="https://linkedin.com/in/ck-rajput" class="social-button" target="_blank">
+                                🔗 LinkedIn - Professional Network
+                            </a>
+                            
+                            <a href="https://github.com/ck-rajput" class="social-button" target="_blank">
+                                💻 GitHub - Code Repository
+                            </a>
+                            
+                            <a href="https://twitter.com/ck_rajput" class="social-button" target="_blank">
+                                🐦 Twitter - Thoughts & Updates
+                            </a>
+                            
+                            <a href="mailto:Chhotuchiitodiya@gmail.com" class="social-button">
+                                ✉️ Direct Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

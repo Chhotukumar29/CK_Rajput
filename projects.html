@@ -1,30 +1,271 @@
----
-layout: not_homepage
-quote: Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.
-author: Pele
----
-
-{% include quote.html quote=page.quote author=page.author %}
-
-<div class="project_list">
-  <h2 class="heading center">Projects and Experiments:</h2>
-  {% for project in site.data.projects %}
-    {% include project_box.html %}
-  {% endfor %}
-</div>
-
-<div class="projects-bottom center-align">
-  <h1 class="heading">Have questions, comments, feedback? Feel free to reach out!</h1>
-  <div class="row">
-    <div class="col m6 offset-m3 s12">
-      <div class="row">
-        <div class="col s6">
-          <a href="/contact"><button type="button" class="fill col s12" name="button">contact</button></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - CK RAJPUT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600&family=Raleway:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <div class="content-wrapper">
+            <a href="index.html" class="back-button">
+                ← Back to Portfolio
+            </a>
+            
+            <div class="content-paper">
+                <div class="page-header">
+                    <h1 class="page-title">My Projects</h1>
+                    <p style="max-width: 600px; margin: 0 auto; color: #666; font-size: 18px; line-height: 1.6;">
+                        These are my AI/ML projects showcasing expertise in computer vision, NLP, data science, 
+                        and generative AI. Each project demonstrates practical applications of cutting-edge 
+                        technologies solving real-world problems.
+                    </p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: LLM Q&A Chatbot -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=400&h=250&fit=crop" 
+                             alt="LLM Q&A Chatbot" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">LLM Q&A Chatbot</h3>
+                                <span class="featured-badge">Featured</span>
+                            </div>
+                            <p class="project-description">
+                                Innovated and devised a LangChain Q&A Chatbot using Streamlit, OpenAI GPT-3.5-turbo, RAG, 
+                                enhancing user interaction and information retrieval with advanced NLP techniques.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-chip">Python</span>
+                                <span class="tech-chip">NLP</span>
+                                <span class="tech-chip">LangChain</span>
+                                <span class="tech-chip">LLM</span>
+                                <span class="tech-chip">Generative AI</span>
+                                <span class="tech-chip">RAG</span>
+                                <span class="tech-chip">Streamlit</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ck-rajput/llm-qa-chatbot" class="project-button secondary" target="_blank">
+                                    Code
+                                </a>
+                                <a href="https://llm-chatbot-demo.streamlit.app" class="project-button primary" target="_blank">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Finance Application -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop" 
+                             alt="Finance Application" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Finance Application</h3>
+                            </div>
+                            <p class="project-description">
+                                Overhauled a finance app using Python, FastAPI, and React.js to enhance user experience, 
+                                streamline data entry and boost performance by 30% through form and backend optimization.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-chip">Python</span>
+                                <span class="tech-chip">FastAPI</span>
+                                <span class="tech-chip">React.js</span>
+                                <span class="tech-chip">Git</span>
+                                <span class="tech-chip">Linux</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ck-rajput/finance-application" class="project-button secondary" target="_blank">
+                                    Code
+                                </a>
+                                <a href="https://finance-app-demo.vercel.app" class="project-button primary" target="_blank">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Real-time Headcount Detection -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" 
+                             alt="Headcount Detection System" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Real-time Headcount Detection System</h3>
+                                <span class="featured-badge">Featured</span>
+                            </div>
+                            <p class="project-description">
+                                Built real-time headcount object detection using Python, FastAPI, and YOLO, integrated with 
+                                CCTV through RTSP for seamless object detection and real-time analytics deployed with Docker.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-chip">Python</span>
+                                <span class="tech-chip">YOLO</span>
+                                <span class="tech-chip">FastAPI</span>
+                                <span class="tech-chip">RTSP</span>
+                                <span class="tech-chip">Docker</span>
+                                <span class="tech-chip">Computer Vision</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ck-rajput/headcount-detection" class="project-button secondary" target="_blank">
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4: AutoQuery Pro -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&h=250&fit=crop" 
+                             alt="AutoQuery Pro" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">AutoQuery Pro - AI Database Assistant</h3>
+                            </div>
+                            <p class="project-description">
+                                AI-powered, multi-agent tool enabling non-technical users to query SQL/NoSQL databases using NLP, 
+                                built with AI Agents, LangChain, LLMs, and FastAPI.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-chip">AI Agents</span>
+                                <span class="tech-chip">LangChain</span>
+                                <span class="tech-chip">LLMs</span>
+                                <span class="tech-chip">FastAPI</span>
+                                <span class="tech-chip">SQL</span>
+                                <span class="tech-chip">NoSQL</span>
+                                <span class="tech-chip">NLP</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ck-rajput/autoquery-pro" class="project-button secondary" target="_blank">
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5: Water Quality Prediction -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop" 
+                             alt="Water Quality Prediction" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Water Quality Prediction Model</h3>
+                            </div>
+                            <p class="project-description">
+                                Developed machine learning model to predict water quality and potability, leveraging EC, TOC, THMs, 
+                                Hardness, and Turbidity parameters using SciKit-Learn, deployed on AWS EC2.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-chip">Python</span>
+                                <span class="tech-chip">Scikit-Learn</span>
+                                <span class="tech-chip">AWS</span>
+                                <span class="tech-chip">EC2</span>
+                                <span class="tech-chip">Data Analysis</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ck-rajput/water-quality-prediction" class="project-button secondary" target="_blank">
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6: AQI Prediction System -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=400&h=250&fit=crop" 
+                             alt="AQI Prediction System" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">All India AQI Prediction System</h3>
+                            </div>
+                            <p class="project-description">
+                                Designed innovative model for precise prediction of All India AQI levels from user-provided latitude 
+                                and longitude, utilizing unstructured data within an API using Python, Pandas, Haversine, and Streamlit.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-chip">Python</span>
+                                <span class="tech-chip">Pandas</span>
+                                <span class="tech-chip">Haversine</span>
+                                <span class="tech-chip">Streamlit</span>
+                                <span class="tech-chip">API</span>
+                                <span class="tech-chip">Geospatial Analysis</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ck-rajput/aqi-prediction" class="project-button secondary" target="_blank">
+                                    Code
+                                </a>
+                                <a href="https://aqi-predictor.streamlit.app" class="project-button primary" target="_blank">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 7: Safety Equipment Detection -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop" 
+                             alt="Safety Equipment Detection" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Safety Equipment Detection System</h3>
+                            </div>
+                            <p class="project-description">
+                                Built advanced detection system using YOLOv8 for real-time monitoring of safety equipment within 
+                                production lines, identifying non-compliance issues with high accuracy.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-chip">YOLOv8</span>
+                                <span class="tech-chip">Computer Vision</span>
+                                <span class="tech-chip">Python</span>
+                                <span class="tech-chip">Real-time Detection</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ck-rajput/safety-equipment-detection" class="project-button secondary" target="_blank">
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 8: Automated File Retrieval -->
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop" 
+                             alt="File Retrieval System" class="project-image">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Automated File Retrieval System</h3>
+                            </div>
+                            <p class="project-description">
+                                Promoted an Automated File Retrieval System with Transformer model (BERT) for embeddings, ChromaDB, 
+                                and Streamlit for semantic file search, optimizing retrieval of most relevant files.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-chip">BERT</span>
+                                <span class="tech-chip">Transformers</span>
+                                <span class="tech-chip">ChromaDB</span>
+                                <span class="tech-chip">Streamlit</span>
+                                <span class="tech-chip">Semantic Search</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/ck-rajput/file-retrieval-system" class="project-button secondary" target="_blank">
+                                    Code
+                                </a>
+                                <a href="https://file-search-demo.streamlit.app" class="project-button primary" target="_blank">
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col s6">
-          <button type="button" class="fill col s12" id="scroll-top" title="scroll back top" name="button">scroll back to top</button>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
